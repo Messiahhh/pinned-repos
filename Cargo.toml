@@ -1,0 +1,17 @@
+[package]
+name = "pinned-repos"
+version = "0.1.0"
+edition = "2021"
+authors = ["Akara <616348105@qq.com>"]
+license = "MIT"
+description = "get your pinned github repos infomation"
+keywords = ["cli", "github"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scraper = '*'
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tabled = '*'
+clap = { version = "3.2.21", features = ["derive"] }
